@@ -23,9 +23,5 @@ spring.datasource.url=jdbc:mysql://<CLOUD_SQL_IP>:3306/course_db
 spring.datasource.username=<USERNAME>
 spring.datasource.password=<PASSWORD>
 
-🔧 How to Use This Repository
-Clone the repository bash git clone https://github.com/SithiraRoneth/cloud-enabled-deployment-.git
-cd cloud-gcp-deployment
-
 📽️ Configured Video
 watch here : https://drive.google.com/file/d/1ksv0fvVtojp87mOu14pOH_m3zyRNa6ir/view?usp=drive_link
