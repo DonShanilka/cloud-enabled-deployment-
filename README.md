@@ -18,7 +18,8 @@ Backend Services
    Default port: 8081
    Configure MySQL settings
 
-3. student-service
+
+2. student-service
    Document: Student(registrationNumber, fullName, address, contact, email)
    Endpoints:
    GET /students
@@ -28,7 +29,8 @@ Backend Services
    Default port: 8082
    Configure MongoDB settings
 
-5. media-service
+
+3. media-service
    Resource: files
    Endpoints:
    POST /files (multipart/form-data: file)
@@ -51,5 +53,7 @@ Frontend: run npm install then npm run dev inside frontend-app.
 📽️ Configured Video : https://drive.google.com/file/d/1ksv0fvVtojp87mOu14pOH_m3zyRNa6ir/view?usp=drive_link
 
 Name       := P.D.Nishith Shanilka
+
 Student ID := 2301671064
+
 Email      := shanilka799@gmail.com
