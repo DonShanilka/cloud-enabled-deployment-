@@ -1,59 +1,26 @@
-README.md ,Cloud Enabled Deployment In Action with AWS
-This repository contains four projects:
+☁️ Cloud Enabled Deployment In Action with GCP
+This repository demonstrates a cloud-enabled microservices architecture deployed on Google Cloud Platform (GCP).
 
-course-service (Spring Boot + MySQL)
-student-service (Spring Boot + MongoDB)
-media-service (Spring Boot + Local file storage, can be extended to S3/MinIO)
+📦 Project Structure
+course-service → Spring Boot + MySQL (Cloud SQL)
+student-service → Spring Boot + MongoDB
+media-service → Spring Boot + Local file storage (can be extended to Cloud Storage)
+frontend-app → React + TypeScript
 
-frontend-app (React + TypeScript)
-Backend Services
-
+🔧 Backend Services
 1. course-service
-   Entity: Course(id, name, duration)
-   Endpoints:
-   GET /courses
-   GET /courses/{id}
-   POST /courses
-   DELETE /courses/{id}
-   Default port: 8081
-   Configure MySQL settings
+Entity: Course(id, name, duration)
+Endpoints:
+GET /courses
+GET /courses/{id}
+POST /courses
+DELETE /courses/{id}
+Port: 8081
+Database: Google Cloud SQL (MySQL)
+Config Example (application-gcp.properties):
 
-
-2. student-service
-   Document: Student(registrationNumber, fullName, address, contact, email)
-   Endpoints:
-   GET /students
-   GET /students/{id}
-   POST /students
-   DELETE /students/{id}
-   Default port: 8082
-   Configure MongoDB settings
-
-
-3. media-service
-   Resource: files
-   Endpoints:
-   POST /files (multipart/form-data: file)
-   GET /files (list)
-   GET /files/{id} (fetch)
-   DELETE /files/{id} (delete)
-   Default port: 8083
-   Uses local disk storage at ./data/media by default (override with env var MEDIA_STORAGE_DIR).
-   Frontend (frontend-app)
-   React + TypeScript + MUI + Axios + Vite app with 3 sections: Courses, Students, Media
-   Scripts:
-   npm run dev (Vite dev server)
-   npm run build (TypeScript build + Vite build)
-   npm run preview (Preview built app)
-   Build
-
-Backend: run mvn -q -e -DskipTests package at repo root to build services.
-Frontend: run npm install then npm run dev inside frontend-app.
+spring.datasource.url=jdbc:mysql://<CLOUD_SQL_IP>:3306/course_db
+spring.datasource.username=<USERNAME>
+spring.datasource.password=<PASSWORD>
 
 📽️ Configured Video : https://drive.google.com/file/d/1ksv0fvVtojp87mOu14pOH_m3zyRNa6ir/view?usp=drive_link
-
-Name       := P.D.Nishith Shanilka
-
-Student ID := 2301671064
-
-Email      := shanilka799@gmail.com
