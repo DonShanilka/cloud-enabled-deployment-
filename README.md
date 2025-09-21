@@ -57,3 +57,7 @@ Name       := P.D.Nishith Shanilka
 Student ID := 2301671064
 
 Email      := shanilka799@gmail.com
+
+Contact No := 070 1094749
+
+Batch := GDSE 67 (Panadhura)
